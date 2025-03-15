@@ -1,0 +1,60 @@
+/* فونت‌های سفارشی */
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/IRANSans.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Vazir';
+  src: url('/fonts/Vazir.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Shabnam';
+  src: url('/fonts/Shabnam.woff2') format('woff2');
+}
+
+/* اعمال فونت به کل صفحه */
+html, body, body * {
+  font-family: 'Vazir', sans-serif !important;
+}
+
+/* استایل سایدبار */
+.chat-sidebar {
+  position: fixed;
+  left: 0;
+  top: 5%;
+  width: 20%;
+  height: 95%;
+  background: transparent;
+  color: inherit;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+/* بخش چت‌ها */
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+/* بخش پایین */
+.sidebar-footer {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+/* تنظیمات RTL برای متن‌های فارسی */
+.rtl-text {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: embed !important;
+}
+
+/* تنظیمات LTR برای متن‌های انگلیسی */
+.ltr-text {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: embed !important;
+}

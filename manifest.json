@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Grok Interface",
+  "version": "1.0",
+  "description": "اکستنشن پیشرفته برای گراک با سایدبار و فونت‌های فارسی",
+  "permissions": ["*://grok.com/*", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://grok.com/*", "*://grok.com/chat/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": ["fonts/IRANSans.woff2", "fonts/Vazir.woff2", "fonts/Shabnam.woff2"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}

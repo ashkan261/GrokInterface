@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Grok Interface Settings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: 'Vazir', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+  <h1 class="text-base font-semibold mb-4 text-center text-indigo-600">GROK PANEL</h1>
+  
+  <div class="mb-4">
+    <label for="font-select" class="block text-[11px] font-medium mb-1 text-gray-700">انتخاب فونت:</label>
+    <select id="font-select" class="w-full p-2 rounded-lg bg-white shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 border border-gray-300 hover:bg-gray-50 transition-colors">
+      <option value="IRANSans">IRANSans</option>
+      <option value="Vazir">Vazir</option>
+      <option value="Shabnam">Shabnam</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="font-size" class="block text-sm font-medium mb-2">اندازه فونت:</label>
+    <input type="range" id="font-size" min="12" max="24" value="16" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-500">
+    <span id="font-size-value" class="text-sm text-gray-600 mt-1 block text-center">16px</span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
